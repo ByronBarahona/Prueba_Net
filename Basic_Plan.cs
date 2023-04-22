@@ -13,11 +13,10 @@ using Prueba1.GUI;
 namespace Prueba1.GUI
 {
 
-    public partial class Basic_Plan : Form
+    public class Basic_Plan : Form
     {
 
-        private Deportista dep = new Deportista();
-        readonly Home_Form hform = new Home_Form();
+        public Deportista dep;
 
         private double altura;
         private double peso;
@@ -26,7 +25,7 @@ namespace Prueba1.GUI
         public String Admin;
         private int cantidad;
 
-        public Basic_Plan()
+        public Basic_Plan(Deportista dep)
         {
             this.dep = dep;
             InitializeComponent();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Prueba1.Model
 {
-    internal class Deportista
+    public class Deportista
     {
         private String jstName;
         private int peso;
